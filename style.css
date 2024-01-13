@@ -1,0 +1,115 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: linear-gradient(to top right, darkcyan, darkorchid);
+  color: whitesmoke;
+  padding: 40px;
+}
+header h1 {
+  font-weight: 700;
+}
+header {
+  text-align: center;
+}
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 10px;
+}
+.search-box input {
+  width: 70%;
+  height: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.3rem;
+}
+.search-box button {
+  padding: 10px 20px;
+  width: 100px;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: blueviolet;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .images {
+  max-width: 95%;
+  columns: 5 340px;
+  gap: 10px;
+  margin-top: 30px;
+}
+.card {
+  list-style: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+.load-more {
+  background: linear-gradient(to top right, darkcyan, darkorchid);
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  outline: 0;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -100px;
+  background: linear-gradient(to top, #222, transparent);
+  padding: 10px 30px;
+  width: 100%;
+  transition: bottom 0.2s ease;
+}
+.card:hover .details {
+  bottom: 0;
+}
+.photographer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.photographer p img {
+  width: 30px;
+}
+.details button {
+  background: transparent;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+  /* mix-blend-mode: color-burn; */
+}
