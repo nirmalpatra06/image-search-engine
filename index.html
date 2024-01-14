@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="light-box">
+      <div class="info">
+        <div class="box-1">
+          <img src="images/photo-camera.png" alt="camera" />
+          <h2>Nirmal patra</h2>
+        </div>
+        <div class="box-2">
+          <img src="images/download.png" alt="download" />
+          <button>&times;</button>
+        </div>
+      </div>
+      <img class="pop-img" src="images/img-8.jpg" alt="img-9" />
+    </div>
     <header>
       <h1>Image-Search-Engine</h1>
       <p>Search and Download any images here</p>
@@ -17,40 +30,11 @@
     </header>
     <main>
       <div class="container">
-        <ul class="images">
-          <li class="card">
-            <img src="images/img-1.jpg" alt="img" />
-            <div class="details">
-              <div class="photographer">
-                <p><img src="images/photo-camera.png" alt="camera" /></p>
-                <span>Nirmal patra</span>
-              </div>
-              <button>
-                <img src="images/download.png" alt="download" />
-              </button>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/img-2.jpg" alt="img" />
-          </li>
-          <li class="card">
-            <img src="images/img-3.jpg" alt="img" />
-          </li>
-          <li class="card">
-            <img src="images/img-4.jpg" alt="img" />
-          </li>
-          <li class="card">
-            <img src="images/img-5.jpg" alt="img" />
-          </li>
-          <li class="card">
-            <img src="images/img-6.jpg" alt="img" />
-          </li>
-          <li class="card">
-            <img src="images/img-7.jpg" alt="img" />
-          </li>
-        </ul>
+        <ul class="images"></ul>
         <button class="load-more">Load more</button>
       </div>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>

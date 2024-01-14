@@ -67,6 +67,9 @@ header p {
 .card img {
   width: 100%;
 }
+.download {
+  background-color: #fff;
+}
 .load-more {
   background: linear-gradient(to top right, darkcyan, darkorchid);
   padding: 8px;
@@ -111,5 +114,64 @@ header p {
   width: 30px;
   cursor: pointer;
   border: none;
-  /* mix-blend-mode: color-burn; */
+}
+.light-box {
+  width: 50%;
+  height: 100vh;
+  background-color: #e1e1e1;
+  position: fixed;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.pop-img {
+  width: 450px;
+  height: 90vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding-top: 30px;
+  transform: translate(-50%, -50%);
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.box-1 {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 100px;
+}
+.box-2 {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.box-2 button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #dbdbdb;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.box-2 button:hover {
+  background-color: red;
+  color: white;
+}
+.box-2 img {
+  cursor: pointer;
+  border-radius: 2px;
+  background: blueviolet;
+}
+
+.info img {
+  width: 30px;
 }
