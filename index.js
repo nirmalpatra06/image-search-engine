@@ -11,7 +11,7 @@ const lightBoxDownloadBtn = document.getElementById("lightDBtn");
 const apiKey = "VlXMx8crhCHzQRQRRXF3HA6R7NiSWSRszI0RrnTGDDNoa62nQV851hW3";
 const perPage = 15;
 let curPage = 1;
-let searchQuery = null;
+let searchQuery = false;
 ///////////////
 
 function generateHTML(images) {
@@ -25,7 +25,7 @@ function generateHTML(images) {
         <p><img src="images/camera.png" alt="camera" /></p>
         <span>${img.photographer}</span>
       </div>
-      <button onclick="downloadImage('${img.src.large2x}')" >
+      <button onclick="downloadImage('${img.src.large2x}');event.stopPropagation();" >
         <img class="download" src="images/download.png" alt="download" />
       </button>
     </div>
